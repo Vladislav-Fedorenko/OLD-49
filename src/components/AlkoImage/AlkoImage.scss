@@ -1,4 +1,4 @@
-.alko-image:hover {
+.alko-image {
   animation: shake 1s ease-in-out infinite, blur 3s ease-in-out infinite;
 }
 
@@ -7,7 +7,7 @@
     filter: blur(0px);
   }
   50% {
-    filter: blur(5px);
+    filter: blur(var(--blur));
   }
   100% {
     filter: blur(0px);
@@ -16,13 +16,13 @@
 
 @keyframes shake {
   25% {
-    transform: translate(-10px, -10px);
+    transform: translate(calc(-1 * var(--shake)), calc(-1 * var(--shake)));
   }
   50% {
-    transform: translate(10px, 0px);
+    transform: translate(var(--shake), 0px);
   }
   75% {
-    transform: translate(0px, -10px);
+    transform: translate(0px, calc(-1 * var(--shake)));
   }
   100% {
     transform: translate(0px, 0px);

@@ -1,14 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import './style.scss';
-import {AlkoImage} from '../../components/AlkoImage/AlkoImage';
+import "./style.scss";
+import { AlkoImage } from "../../components/alkoimage/AlkoImage";
 
 export const Bar = () => {
   return (
     <div className="start-page">
-      <AlkoImage>
-        Bar page
-      </AlkoImage>
+      <AlkoImage>Bar page</AlkoImage>
     </div>
   );
-}
+};
