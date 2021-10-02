@@ -1,0 +1,22 @@
+$progress-height: 30px;
+$progress-width: 100%;
+$progress-padding: 7px;
+$progress-value-color: #03fcb5;
+
+.bar {
+    -webkit-appearance: none;
+    height: $progress-height;
+    width: $progress-width;
+
+&::-webkit-progress-bar {
+     padding: $progress-padding;
+     border-radius: calc(#{$progress-height} / 2);
+     background: lighten(#111, 5);
+ }
+&::-webkit-progress-value {
+     background: $progress-value-color;
+     box-shadow: 0 0 0.6em lighten($progress-value-color, 2),
+     0 0 0.8em lighten($progress-value-color, 4);
+     border-radius: calc(#{$progress-height}/2);
+ }
+}
