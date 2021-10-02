@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/OLD-49/static/css/main.8fc9650f.chunk.css",
-    "main.js": "/OLD-49/static/js/main.1c9fc81a.chunk.js",
-    "main.js.map": "/OLD-49/static/js/main.1c9fc81a.chunk.js.map",
-    "runtime-main.js": "/OLD-49/static/js/runtime-main.017e4e72.js",
-    "runtime-main.js.map": "/OLD-49/static/js/runtime-main.017e4e72.js.map",
-    "static/js/2.98053f17.chunk.js": "/OLD-49/static/js/2.98053f17.chunk.js",
-    "static/js/2.98053f17.chunk.js.map": "/OLD-49/static/js/2.98053f17.chunk.js.map",
-    "static/js/3.7a9d5e8b.chunk.js": "/OLD-49/static/js/3.7a9d5e8b.chunk.js",
-    "static/js/3.7a9d5e8b.chunk.js.map": "/OLD-49/static/js/3.7a9d5e8b.chunk.js.map",
+    "main.css": "/OLD-49/static/css/main.027215df.chunk.css",
+    "main.js": "/OLD-49/static/js/main.10c51b0e.chunk.js",
+    "main.js.map": "/OLD-49/static/js/main.10c51b0e.chunk.js.map",
+    "runtime-main.js": "/OLD-49/static/js/runtime-main.c0eff35d.js",
+    "runtime-main.js.map": "/OLD-49/static/js/runtime-main.c0eff35d.js.map",
+    "static/js/2.1addec93.chunk.js": "/OLD-49/static/js/2.1addec93.chunk.js",
+    "static/js/2.1addec93.chunk.js.map": "/OLD-49/static/js/2.1addec93.chunk.js.map",
+    "static/js/3.c460ba4a.chunk.js": "/OLD-49/static/js/3.c460ba4a.chunk.js",
+    "static/js/3.c460ba4a.chunk.js.map": "/OLD-49/static/js/3.c460ba4a.chunk.js.map",
     "index.html": "/OLD-49/index.html",
-    "static/css/main.8fc9650f.chunk.css.map": "/OLD-49/static/css/main.8fc9650f.chunk.css.map",
-    "static/js/2.98053f17.chunk.js.LICENSE.txt": "/OLD-49/static/js/2.98053f17.chunk.js.LICENSE.txt",
-    "static/media/img.f5292ba0.jpeg": "/OLD-49/static/media/img.f5292ba0.jpeg"
+    "static/css/main.027215df.chunk.css.map": "/OLD-49/static/css/main.027215df.chunk.css.map",
+    "static/js/2.1addec93.chunk.js.LICENSE.txt": "/OLD-49/static/js/2.1addec93.chunk.js.LICENSE.txt",
+    "static/media/img.f5292ba0.jpeg": "/OLD-49/static/media/img.f5292ba0.jpeg",
+    "static/media/psychomecka.375ada2f.ogg": "/OLD-49/static/media/psychomecka.375ada2f.ogg"
   },
   "entrypoints": [
-    "static/js/runtime-main.017e4e72.js",
-    "static/js/2.98053f17.chunk.js",
-    "static/css/main.8fc9650f.chunk.css",
-    "static/js/main.1c9fc81a.chunk.js"
+    "static/js/runtime-main.c0eff35d.js",
+    "static/js/2.1addec93.chunk.js",
+    "static/css/main.027215df.chunk.css",
+    "static/js/main.10c51b0e.chunk.js"
   ]
 }
