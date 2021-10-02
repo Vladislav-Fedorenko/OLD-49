@@ -1,6 +1,6 @@
 import img from "./assets/img/img.jpeg";
 import "./App.css";
-import { AlkoImage } from "./components/AlkoImage/AlkoImage";
+import { AlkoImage } from "./components/alkoimage/AlkoImage";
 
 import { Layout } from "./layout/Layout";
 
