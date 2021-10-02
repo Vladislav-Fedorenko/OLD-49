@@ -1,0 +1,38 @@
+.sleep {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    z-index: 100;
+    background: black;
+    transition: transform 1s;
+  }
+
+  &::before {
+    transform: translateY(-100%);
+  }
+
+  &::after {
+    top: 50%;
+    transform: translateY(100%);
+  }
+
+  &.active::before,
+  &.active::after {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes sleep {
+  100% {
+    transform: translateY(0%);
+  }
+}
