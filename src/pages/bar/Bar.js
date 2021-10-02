@@ -5,7 +5,7 @@ import { AlkoImage } from "../../components/alkoimage/AlkoImage";
 
 export const Bar = () => {
   return (
-    <div className="start-page">
+    <div className="bar-page">
       <AlkoImage>Bar page</AlkoImage>
     </div>
   );
