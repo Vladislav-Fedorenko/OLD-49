@@ -1,10 +1,16 @@
-import './App.css';
+import img from "./assets/img/img.jpeg";
+import "./App.css";
+import { AlkoImage } from "./components/alkoimage/AlkoImage";
 
-import {Layout} from './layout/Layout';
+import { Layout } from "./layout/Layout";
 
 function App() {
   return (
-    <Layout />
+    <Layout>
+      <AlkoImage>
+        <img src={img} alt="" />
+      </AlkoImage>
+    </Layout>
   );
 }
 
