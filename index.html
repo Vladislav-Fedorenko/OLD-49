@@ -7,39 +7,40 @@
     <title>Document</title>
 
     <style>
-      img:hover {
-        animation: shake 1s ease-in-out infinite, blur 3s ease-in-out infinite;
+      div {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        background: red;
+        /* border-top: 0px solid black;
+        border-bottom: 0px solid black; */
       }
 
-      @keyframes blur {
-        0% {
-          filter: blur(0px);
-        }
-        50% {
-          filter: blur(5px);
-        }
-        100% {
-          filter: blur(0px);
-        }
+      div::before,
+      div::after {
+        content: "";
+        background: black;
       }
 
-      @keyframes shake {
-        25% {
-          transform: translate(-10px, -10px);
-        }
-        50% {
-          transform: translate(10px, 0px);
-        }
-        75% {
-          transform: translate(0px, -10px);
-        }
+      div::before {
+        transform: translateY(-100%);
+      }
+
+      div::after {
+        transform: translateY(100%);
+      }
+
+      div:hover {
+        /* animation: close 1s ease-in forwards; */
+      }
+
+      @keyframes close {
         100% {
-          transform: translate(0px, 0px);
         }
       }
     </style>
   </head>
   <body>
-    <img src="img.jpeg" alt="" />
+    <div>dskjfgdskjhfjksdf</div>
   </body>
 </html>
