@@ -24,7 +24,7 @@ export const Dance = () => {
     setTimeout(() => setDisplayGif2(true), 4000);
     setTimeout(() => setDisplayGif3(true), 5000);
     setTimeout(() => setDisplayGif4(true), 6000);
-    setTimeout(() => history.push("/order-taxi"), 12000)
+    setTimeout(() => history.push("/order-taxi"), 11000)
   }, []);
   return (
     <div className="dance-page">
