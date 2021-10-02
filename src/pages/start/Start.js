@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import './style.scss';
-import {AlkoImage} from '../../components/AlkoImage/AlkoImage';
-import {Link} from 'react-router-dom';
+import "./style.scss";
+import { AlkoImage } from "../../components/alkoimage/AlkoImage";
+import { Link } from "react-router-dom";
 
 export const Start = () => {
   return (
@@ -12,4 +12,4 @@ export const Start = () => {
       </AlkoImage>
     </div>
   );
-}
+};
