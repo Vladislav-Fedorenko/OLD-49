@@ -3,4 +3,21 @@
   height: 100%;
   background: url("../../assets/img/bar.jpg") no-repeat center;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bar-page__cocktail {
+  width: 300px;
+}
+
+.bar-page__button {
+  text-transform: uppercase;
+  display: block;
+  font-size: 80px;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
