@@ -1,20 +1,19 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, {useContext, useEffect} from 'react';
+import { useHistory } from 'react-router-dom';
 
-import {AppContext} from '../../layout/context/Context';
-import {AlkoImage} from '../../components/AlkoImage/AlkoImage';
+import { AppContext } from '../../layout/context/Context';
+import audio from '../../assets/audio/psychomecka.ogg';
+import {Button} from '../../components/button/Button';
 
-import audio from '../../assets/psychomecka.ogg';
 import './style.scss';
 
 export const Start = () => {
+  const history = useHistory();
   const {setAudioTrack} = useContext(AppContext);
   useEffect(() => setAudioTrack(audio), []);
   return (
     <div className="start-page">
-      <AlkoImage>
-        <Link to="/bar">Start</Link>
-      </AlkoImage>
+      <Button text="Start" className="start-button" textColor="#0fa" onClick={() => history.push("/bar")} />
     </div>
   );
 };

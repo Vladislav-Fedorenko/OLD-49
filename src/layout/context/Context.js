@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 export const AppContext = React.createContext(null);
 
 export const Context = ({ children }) => {
-  const [progressbarValue, setProgressbarValue] = useState(50);
+  const [progressbarValue, setProgressbarValue] = useState(0);
   const [audioTrack, setAudioTrack] = useState(null);
   const contextValue = {
     progressbarValue,
