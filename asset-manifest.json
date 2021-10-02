@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/OLD-49/static/css/main.027215df.chunk.css",
-    "main.js": "/OLD-49/static/js/main.10c51b0e.chunk.js",
-    "main.js.map": "/OLD-49/static/js/main.10c51b0e.chunk.js.map",
-    "runtime-main.js": "/OLD-49/static/js/runtime-main.c0eff35d.js",
-    "runtime-main.js.map": "/OLD-49/static/js/runtime-main.c0eff35d.js.map",
-    "static/js/2.1addec93.chunk.js": "/OLD-49/static/js/2.1addec93.chunk.js",
-    "static/js/2.1addec93.chunk.js.map": "/OLD-49/static/js/2.1addec93.chunk.js.map",
-    "static/js/3.c460ba4a.chunk.js": "/OLD-49/static/js/3.c460ba4a.chunk.js",
-    "static/js/3.c460ba4a.chunk.js.map": "/OLD-49/static/js/3.c460ba4a.chunk.js.map",
+    "main.css": "/OLD-49/static/css/main.f36893e9.chunk.css",
+    "main.js": "/OLD-49/static/js/main.865e0b45.chunk.js",
+    "main.js.map": "/OLD-49/static/js/main.865e0b45.chunk.js.map",
+    "runtime-main.js": "/OLD-49/static/js/runtime-main.076847e6.js",
+    "runtime-main.js.map": "/OLD-49/static/js/runtime-main.076847e6.js.map",
+    "static/js/2.38a453ca.chunk.js": "/OLD-49/static/js/2.38a453ca.chunk.js",
+    "static/js/2.38a453ca.chunk.js.map": "/OLD-49/static/js/2.38a453ca.chunk.js.map",
+    "static/js/3.b5f6ed8c.chunk.js": "/OLD-49/static/js/3.b5f6ed8c.chunk.js",
+    "static/js/3.b5f6ed8c.chunk.js.map": "/OLD-49/static/js/3.b5f6ed8c.chunk.js.map",
     "index.html": "/OLD-49/index.html",
-    "static/css/main.027215df.chunk.css.map": "/OLD-49/static/css/main.027215df.chunk.css.map",
-    "static/js/2.1addec93.chunk.js.LICENSE.txt": "/OLD-49/static/js/2.1addec93.chunk.js.LICENSE.txt",
+    "static/css/main.f36893e9.chunk.css.map": "/OLD-49/static/css/main.f36893e9.chunk.css.map",
+    "static/js/2.38a453ca.chunk.js.LICENSE.txt": "/OLD-49/static/js/2.38a453ca.chunk.js.LICENSE.txt",
     "static/media/img.f5292ba0.jpeg": "/OLD-49/static/media/img.f5292ba0.jpeg",
-    "static/media/psychomecka.375ada2f.ogg": "/OLD-49/static/media/psychomecka.375ada2f.ogg"
+    "static/media/psychomecka.375ada2f.ogg": "/OLD-49/static/media/psychomecka.375ada2f.ogg",
+    "static/media/style.scss": "/OLD-49/static/media/svoe.c8413d98.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c0eff35d.js",
-    "static/js/2.1addec93.chunk.js",
-    "static/css/main.027215df.chunk.css",
-    "static/js/main.10c51b0e.chunk.js"
+    "static/js/runtime-main.076847e6.js",
+    "static/js/2.38a453ca.chunk.js",
+    "static/css/main.f36893e9.chunk.css",
+    "static/js/main.865e0b45.chunk.js"
   ]
 }
