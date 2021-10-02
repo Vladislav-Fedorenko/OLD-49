@@ -13,7 +13,7 @@ export const Start = () => {
   useEffect(() => setAudioTrack(audio), []);
   return (
     <div className="start-page">
-      <Button text="Start -->>" className="start-button" textColor="#0fa" onClick={() => history.push("/bar")} />
+      <Button text="Start" className="start-button" textColor="#0fa" onClick={() => history.push("/bar")} />
     </div>
   );
 };
