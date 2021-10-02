@@ -1,0 +1,12 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(9,9,121);
+  background: radial-gradient(circle, rgba(9,9,121,1) 18%, rgba(9,15,125,1) 60%, rgba(2,0,36,1) 86%, rgba(85,1,111,1) 98%);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.layout__content {
+
+}
