@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ReactAudioPlayer from "react-audio-player";
+import {Dance} from '../pages/dance/Dance';
 
 import { AppContext } from "./context/Context";
 import { Progressbar } from "../components/progressbar/Progressbar";
@@ -25,6 +26,9 @@ export const Layout = () => {
         <Switch>
           <Route path="/bar">
             <Bar />
+          </Route>
+          <Route path="/dance">
+            <Dance />
           </Route>
           <Route path="/">
             <Start />
