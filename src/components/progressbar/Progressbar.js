@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 
 import './style.scss';
+import {AppContext} from '../../layout/context/Context';
 
-export const Progressbar = ({value, maxValue = 100}) => {
+export const Progressbar = ({maxValue = 100}) => {
+  const {progressbarValue} = useContext(AppContext);
+
   return (
-    <div className="progress-bar">
-      <progress className='bar' value={value} max={maxValue}/>
-    </div>
+    <progress className='bar' value={progressbarValue} max={maxValue}/>
   );
 }

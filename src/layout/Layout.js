@@ -1,13 +1,13 @@
 import React from 'react';
 
-import {ProgressbarContainer} from '../containers/progressbar/ProgressbarContainer';
+import {Progressbar} from '../components/progressbar/Progressbar';
 
 import './style.css';
 
 export const Layout = (props) => {
   return (
     <div className="layout">
-      <ProgressbarContainer />
+      <Progressbar />
       <main className="layout__content">
         {props.children}
       </main>
