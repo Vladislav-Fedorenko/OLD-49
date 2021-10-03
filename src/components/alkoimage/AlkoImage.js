@@ -16,9 +16,9 @@ const normIntensity = (int) => {
 };
 
 const getCssProps = (intensity) => {
-  const k = normIntensity(intensity);
-  const shakeX = r({ a: -SHAKE }) * k;
-  const shakeY = r({ a: -SHAKE }) * k;
+  const k = intensity ? normIntensity(intensity) : 0;
+  const shakeX = r({ a: -SHAKE, b: SHAKE * 2 }) * k;
+  const shakeY = r({ a: -SHAKE, b: SHAKE * 2 }) * k;
 
   const blur = BLUR * k;
 

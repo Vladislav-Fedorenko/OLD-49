@@ -30,18 +30,13 @@ export const OrderTaxi = () => {
   }, []);
 
   const onMouseOver = (e) => {
-    console.log(e);
     if (!progressbarValue) return;
-    const pageWidth = window.innerWidth;
-    const pageHeight = window.innerHeight;
     const left = r({b: 1400}) - 700;
     const bottom = r({b: 700});
-    console.log(pageWidth, pageHeight)
-    console.log(left, bottom)
-    setButtonPosition({
+    setTimeout(() =>setButtonPosition({
       left,
       bottom,
-    })
+    }), 150)
   }
 
   const order = () => history.push("/choose-taxi")

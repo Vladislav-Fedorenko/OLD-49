@@ -12,6 +12,7 @@ import { AlkoImage } from "../../components/alkoimage/AlkoImage";
 
 const DECREASE = 0.7;
 const INCREASE = 10;
+const COUNT = 5;
 
 export const Taxi = () => {
   const { progressbarValue, setProgressbarValue } = useContext(AppContext);
@@ -35,11 +36,11 @@ export const Taxi = () => {
   };
 
   const displayFocus = () => {
-    if (count < 3) {
+    if (count < COUNT) {
       setTimeout(() => {
         setFocusPosition({
-          top: `${-r({ b: window.innerHeight })}px`,
-          left: `${r({ b: window.innerWidth })}px`,
+          top: `${-r({ a: 100, b: window.innerHeight - 200 })}px`,
+          left: `${r({ a: 100, b: window.innerWidth - 200 })}px`,
         });
       }, r({ a: 500, b: 1000 }));
     }
@@ -50,7 +51,7 @@ export const Taxi = () => {
   }, []);
 
   useEffect(() => {
-    if (count >= 2) {
+    if (count >= COUNT) {
       history.push("/flat");
       // console.log("go to flat");
     }
