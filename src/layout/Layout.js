@@ -1,18 +1,20 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import ReactAudioPlayer from "react-audio-player";
-import { Dance } from "../pages/dance/Dance";
 
 import { AppContext } from "./context/Context";
+
+import { OrderTaxi }   from '../pages/order-taxi/OrderTaxi';
+import { ChooseTaxi }  from '../pages/choose-taxi/ChooseTaxi';
+import { Dance }       from '../pages/dance/Dance';
+import { Start }       from "../pages/start/Start";
+import { Bar }         from "../pages/bar/Bar";
+import { GameOver }    from "../pages/game-over/GameOver";
 import { Progressbar } from "../components/progressbar/Progressbar";
-import { Start } from "../pages/start/Start";
-import { Bar } from "../pages/bar/Bar";
-import { GameOverHeli } from "../pages/game-over-heli/GameOverHeli";
-import { HeliSound } from "../components/helisound/HeliSound";
+import { Sleep }       from "../components/sleep/Sleep";
+import { HeliSound }   from "../components/helisound/HeliSound";
 
 import "./style.css";
-import { Sleep } from "../components/sleep/Sleep";
-import {OrderTaxi} from '../pages/order-taxi/OrderTaxi';
 
 export const Layout = () => {
   const { audioTrack, progressbarValue, endGame } = useContext(AppContext);
@@ -23,7 +25,6 @@ export const Layout = () => {
 
   return (
     <div className="layout">
-      {/* <Router> */}
       <Sleep />
 
       <ReactAudioPlayer
@@ -39,23 +40,13 @@ export const Layout = () => {
       <HeliSound />
 
       <Switch>
-        <Route path="/bar">
-          <Bar />
-        </Route>
-        <Route path="/dance">
-          <Dance />
-        </Route>
-        <Route path="/order-taxi">
-          <OrderTaxi />
-        </Route>
-        <Route path="/game-over-heli">
-          <GameOverHeli />
-        </Route>
-        <Route path="/">
-          <Start />
-        </Route>
+        <Route path="/bar">               <Bar/>             </Route>
+        <Route path="/dance">             <Dance/>           </Route>
+        <Route path="/order-taxi">        <OrderTaxi />      </Route>
+        <Route path="/choose-taxi">       <ChooseTaxi />     </Route>
+        <Route path="/game-over">         <GameOver />       </Route>
+        <Route path="/">                  <Start />          </Route>
       </Switch>
-      {/* </Router> */}
     </div>
   );
 };

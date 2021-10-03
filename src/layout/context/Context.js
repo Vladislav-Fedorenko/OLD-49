@@ -7,13 +7,14 @@ export const Context = ({ children }) => {
   const [progressbarValue, setProgressbarValue] = useState(0);
   const [audioTrack, setAudioTrack] = useState(null);
   const [gameOver, setGameOver] = useState(false);
+  const [gameOverReason, setGameOverReason] = useState('');
 
   const history = useHistory();
 
   const endGame = () => {
     if (!gameOver) {
       setGameOver(true);
-      history.push("/game-over-heli");
+      history.push("/game-over");
     }
   };
 
@@ -24,6 +25,8 @@ export const Context = ({ children }) => {
     setAudioTrack,
     gameOver,
     endGame,
+    gameOverReason,
+    setGameOverReason
   };
   return (
     <AppContext.Provider value={contextValue}>{children}</AppContext.Provider>
