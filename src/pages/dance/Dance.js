@@ -11,6 +11,7 @@ import party4 from '../../assets/img/party4.gif';
 import './style.scss';
 import background from '../../assets/img/bar.jpg';
 import {BackgroundImage} from '../../components/backgroundimage/BackgroundImage';
+import {AlkoImage} from '../../components/alkoimage/AlkoImage';
 
 export const Dance = () => {
   const [displayGif1, setDisplayGif1] = useState(false);
@@ -29,12 +30,14 @@ export const Dance = () => {
     setTimeout(() => history.push("/order-taxi"), 11000)
   }, []);
   return (
-    <div className="dance-page">
-      <BackgroundImage src={background} />
-      { displayGif1 ? <img className="dance-gif" src={party1} alt="party" /> : null }
-      { displayGif2 ? <img className="dance-gif" src={party2} alt="party2"/> : null }
-      { displayGif3 ? <img className="dance-gif" src={party3} alt="party3"/> : null }
-      { displayGif4 ? <img className="dance-gif" src={party4} alt="party4"/> : null }
-    </div>
+    <AlkoImage>
+      <div className="dance-page">
+        <BackgroundImage src={background} />
+        { displayGif1 ? <img className="dance-gif" src={party1} alt="party" /> : null }
+        { displayGif2 ? <img className="dance-gif" src={party2} alt="party2"/> : null }
+        { displayGif3 ? <img className="dance-gif" src={party3} alt="party3"/> : null }
+        { displayGif4 ? <img className="dance-gif" src={party4} alt="party4"/> : null }
+      </div>
+    </AlkoImage>
   );
 };
