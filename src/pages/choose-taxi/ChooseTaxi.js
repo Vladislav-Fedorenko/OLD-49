@@ -24,9 +24,10 @@ export const ChooseTaxi = () => {
   const chooseTaxiHandler = (taxi) => {
     if (taxi.number === currentTaxi.number) {
       history.push("/taxi");
+    } else {
+      setGameOverReason(`You choose not your taxi and landed in ${taxi.target}`);
+      history.push("/game-over");
     }
-    setGameOverReason(`You choose not your taxi and landed in ${taxi.target}`);
-    history.push("/game-over");
   };
 
   const textColor = '#0fa';
@@ -40,10 +41,10 @@ export const ChooseTaxi = () => {
         onClick={() => {}}
       />
       {availableTaxi.map(taxi =>
-        <Button text="Go"
-          className={`choose-taxi__info-button_${taxi.number}`}
+        <Button text="Go!"
+          className={`choose-taxi__go-button choose-taxi__go-button_${taxi.number}`}
           textColor={textColor}
-          onClick={(taxi) => chooseTaxiHandler(taxi)}
+          onClick={() => chooseTaxiHandler(taxi)}
         />
       )}
     </div>
