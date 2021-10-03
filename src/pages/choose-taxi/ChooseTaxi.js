@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext} from 'react';
 import { useHistory } from 'react-router-dom';
 import {AlkoImage} from '../../components/alkoimage/AlkoImage';
 
@@ -26,7 +26,7 @@ export const ChooseTaxi = () => {
     if (taxi.number === currentTaxi.number) {
       history.push("/taxi");
     } else {
-      setGameOverReason(`You choose not your taxi and landed in ${taxi.target}`);
+      setGameOverReason(`You chose not your taxi and landed in ${taxi.target}`);
       history.push("/game-over");
     }
   };
@@ -43,11 +43,15 @@ export const ChooseTaxi = () => {
           onClick={() => {}}
         />
         {availableTaxi.map(taxi =>
-          <Button text="Go!"
-                  className={`choose-taxi__go-button choose-taxi__go-button_${taxi.number}`}
-                  textColor={textColor}
-                  onClick={() => chooseTaxiHandler(taxi)}
-          />
+          <div className={`choose-taxi__go-container choose-taxi__go-container_${taxi.number}`}>
+            <AlkoImage>
+            <Button text="Go!"
+                    textColor={textColor}
+                    className="choose-taxi__go-button"
+                    onClick={() => chooseTaxiHandler(taxi)}
+            />
+          </AlkoImage>
+          </div>
         )}
       </div>
     </AlkoImage>
