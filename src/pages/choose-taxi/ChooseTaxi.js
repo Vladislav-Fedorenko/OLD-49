@@ -1,5 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
 import { useHistory } from 'react-router-dom';
+import {AlkoImage} from '../../components/alkoimage/AlkoImage';
 
 import { AppContext } from '../../layout/context/Context';
 import {Button} from '../../components/button/Button';
@@ -32,21 +33,23 @@ export const ChooseTaxi = () => {
 
   const textColor = '#0fa';
   return (
-    <div className="choose-taxi-page">
-      <img className="choose-taxi-page__img" src={background} alt="choose taxi"/>
-      <Button
-        text={`Driver ${currentTaxi.number} is here`}
-        className="choose-taxi__info-button"
-        textColor={textColor}
-        onClick={() => {}}
-      />
-      {availableTaxi.map(taxi =>
-        <Button text="Go!"
-          className={`choose-taxi__go-button choose-taxi__go-button_${taxi.number}`}
+    <AlkoImage>
+      <div className="choose-taxi-page">
+        <img className="choose-taxi-page__img" src={background} alt="choose taxi"/>
+        <Button
+          text={`Driver ${currentTaxi.number} is here`}
+          className="choose-taxi__info-button"
           textColor={textColor}
-          onClick={() => chooseTaxiHandler(taxi)}
+          onClick={() => {}}
         />
-      )}
-    </div>
+        {availableTaxi.map(taxi =>
+          <Button text="Go!"
+                  className={`choose-taxi__go-button choose-taxi__go-button_${taxi.number}`}
+                  textColor={textColor}
+                  onClick={() => chooseTaxiHandler(taxi)}
+          />
+        )}
+      </div>
+    </AlkoImage>
   );
 };
