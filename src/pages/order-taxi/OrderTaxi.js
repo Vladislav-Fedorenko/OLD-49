@@ -36,23 +36,25 @@ export const OrderTaxi = () => {
   }
   const order = () => history.push("/choose-taxi")
   return (
-    <AlkoImage>
-      <BackgroundImage src={background} />
-      <div className="order-taxi-page">
-        <div className="order-taxi-page__phone-container">
-          <img src={isDrunk ? phoneRotate : phone} className="order-taxi-page__phone" alt="phone" />
-          <Button
-            className={`order-taxi-page__button ${isDrunk && "order-taxi-page__button--rotate"}`}
-            text="Order taxi"
-            textStyle=""
-            onClick={order}
-            rest={{
-              style: buttonPosition,
-              onMouseOver,
-            }}
-          />
+    <>
+      <BackgroundImage src={background} style={{ zIndex: 0 }} />
+      <AlkoImage>
+        <div className="order-taxi-page">
+          <div className="order-taxi-page__phone-container">
+            <img src={isDrunk ? phoneRotate : phone} className="order-taxi-page__phone" alt="phone" />
+            <Button
+              className={`order-taxi-page__button ${isDrunk && "order-taxi-page__button--rotate"}`}
+              text="Order taxi"
+              textStyle=""
+              onClick={order}
+              rest={{
+                style: buttonPosition,
+                onMouseOver,
+              }}
+            />
+          </div>
         </div>
-      </div>
-    </AlkoImage>
+      </AlkoImage>
+    </>
   );
 };
