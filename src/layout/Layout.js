@@ -13,6 +13,7 @@ import { GameOver }    from "../pages/game-over/GameOver";
 import { Progressbar } from "../components/progressbar/Progressbar";
 import { Sleep }       from "../components/sleep/Sleep";
 import { HeliSound }   from "../components/helisound/HeliSound";
+import { Flat }        from '../pages/flat/Flat';
 
 import "./style.css";
 
@@ -44,6 +45,7 @@ export const Layout = () => {
         <Route path="/dance">             <Dance/>           </Route>
         <Route path="/order-taxi">        <OrderTaxi />      </Route>
         <Route path="/choose-taxi">       <ChooseTaxi />     </Route>
+        <Route path="/flat">              <Flat />           </Route>
         <Route path="/game-over">         <GameOver />       </Route>
         <Route path="/">                  <Start />          </Route>
       </Switch>
