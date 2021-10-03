@@ -4,7 +4,7 @@ import { AppContext } from "../../layout/context/Context";
 import { r } from "../../utils/random";
 import { useInterval } from "../../hooks/useInterval";
 
-const SHAKE = 50;
+const SHAKE = 100;
 const BLUR = 5;
 const ROTATE = 25;
 

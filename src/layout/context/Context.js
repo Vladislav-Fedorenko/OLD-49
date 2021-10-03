@@ -14,7 +14,6 @@ export const Context = ({ children }) => {
   const endGame = () => {
     if (!gameOver) {
       setGameOver(true);
-      setGameOverReason('You drank too much!');
       history.push("/game-over");
     }
   };

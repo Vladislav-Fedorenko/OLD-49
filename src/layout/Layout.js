@@ -18,11 +18,18 @@ import { Flat }        from '../pages/flat/Flat';
 import { HappyEnd } from "../pages/happy-end/HappyEnd";
 
 import "./style.css";
+import {Button} from '../components/button/Button';
 
 export const Layout = () => {
-  const { audioTrack, progressbarValue, endGame } = useContext(AppContext);
+  const { audioTrack, progressbarValue, endGame, setGameOverReason } = useContext(AppContext);
 
   if (progressbarValue >= 100) {
+    setGameOverReason('You drank too much!');
+    endGame();
+  }
+
+  const giveUp = () => {
+    setGameOverReason('You gave up!');
     endGame();
   }
 
@@ -38,6 +45,10 @@ export const Layout = () => {
       />
       <div className="layout__progress">
         <Progressbar />
+      </div>
+
+      <div className="layout__exit">
+        <Button text="Give up" buttonStyle="outlined" textColor="#008957" onClick={giveUp}/>
       </div>
 
       <HeliSound />
