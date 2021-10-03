@@ -1,0 +1,57 @@
+.taxi-rotate {
+  opacity: 1;
+  transform: rotate(11deg);
+  animation: rotation 1s infinite;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.taxi-page-container {
+  height: 100vh;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👁️</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+}
+
+.tip-button {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+}
+
+.focus-button {
+  position: absolute;
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: inherit;
+
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  transform: scale(1);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
