@@ -1,0 +1,39 @@
+.flat-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.flat-page__default {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flat-page__button {
+  font-size: 60px;
+  color: #fff;
+}
+
+.flat-page__order {
+  width: unset;
+  margin: 0 auto;
+}
+
+.flat-page__buttons {
+  margin-top: 150px;
+  display: flex;
+  text-align: center;
+}
+
+.flat-page__button_title {
+  cursor: default;
+  font-size: 120px;
+}
+
+.dance-gif {
+  width: 47%;
+  height: 44%;
+}

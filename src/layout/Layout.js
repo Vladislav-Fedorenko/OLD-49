@@ -14,9 +14,10 @@ import { GameOver } from "../pages/game-over/GameOver";
 import { Progressbar } from "../components/progressbar/Progressbar";
 import { Sleep } from "../components/sleep/Sleep";
 import { HeliSound } from "../components/helisound/HeliSound";
+import { Flat }        from '../pages/flat/Flat';
+import { HappyEnd } from "../pages/happy-end/HappyEnd";
 
 import "./style.css";
-import { HappyEnd } from "../pages/happy-end/HappyEnd";
 
 export const Layout = () => {
   const { audioTrack, progressbarValue, endGame } = useContext(AppContext);
@@ -42,38 +43,15 @@ export const Layout = () => {
       <HeliSound />
 
       <Switch>
-        <Route path="/bar">
-          {" "}
-          <Bar />{" "}
-        </Route>
-        <Route path="/dance">
-          {" "}
-          <Dance />{" "}
-        </Route>
-        <Route path="/order-taxi">
-          {" "}
-          <OrderTaxi />{" "}
-        </Route>
-        <Route path="/choose-taxi">
-          {" "}
-          <ChooseTaxi />{" "}
-        </Route>
-        <Route path="/game-over">
-          {" "}
-          <GameOver />{" "}
-        </Route>
-        <Route path="/happy-end">
-          {" "}
-          <HappyEnd />{" "}
-        </Route>
-        <Route path="/taxi">
-          {" "}
-          <Taxi />{" "}
-        </Route>
-        <Route path="/">
-          {" "}
-          <Start />{" "}
-        </Route>
+        <Route path="/bar">               <Bar/>             </Route>
+        <Route path="/dance">             <Dance/>           </Route>
+        <Route path="/order-taxi">        <OrderTaxi />      </Route>
+        <Route path="/choose-taxi">       <ChooseTaxi />     </Route>
+        <Route path="/taxi">              <Taxi />           </Route>
+        <Route path="/flat">              <Flat />           </Route>
+        <Route path="/game-over">         <GameOver />       </Route>
+        <Route path="/happy-end">         <HappyEnd />       </Route>
+        <Route path="/">                  <Start />          </Route>
       </Switch>
     </div>
   );
