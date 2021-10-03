@@ -1,13 +1,11 @@
 .bar-page {
   width: 100%;
   height: 100%;
-  background: url("../../assets/img/bar.jpg") no-repeat center;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  animation: light_shadow 10s infinite alternate;
+  animation: light_shadow 3s infinite alternate;
 }
 
 .bar-page__cocktail {
@@ -19,28 +17,5 @@
   display: block;
   font-size: 80px;
   color: #fff;
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
-
-@keyframes light_shadow {
-  0% {
-    box-shadow: inset 0px 0px 500px 0px #3f0155;
-  }
-
-  25% {
-    box-shadow: inset 0px 0px 500px 0px #57016a;
-  }
-
-  50% {
-    box-shadow: inset 0px 0px 500px 0px #010955;
-  }
-
-  75% {
-    box-shadow: inset 0px 0px 500px 0px #550123;
-  }
-
-  100% {
-    box-shadow: inset 0px 0px 500px 0px #010d5e;
-  }
+  margin: 0 auto 15px;
 }

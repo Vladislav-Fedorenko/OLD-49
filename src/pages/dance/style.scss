@@ -2,6 +2,9 @@
   width: 100%;
   height: 100%;
   padding: 50px;
+  background: url("../../assets/img/bar.jpg") no-repeat center;
+  background-size: cover;
+  animation: light_shadow 3s infinite alternate;
 }
 
 .dance-gif {
