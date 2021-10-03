@@ -1,0 +1,20 @@
+.choose-taxi-page {
+  padding-top: 55px;
+  position: relative;
+}
+
+.choose-taxi-page__img {
+  width: 100%;
+  height: calc(100vh - 55px);
+  z-index: -1;
+}
+
+.choose-taxi__info-button {
+  z-index: 2;
+  cursor: default;
+  font-size: 60px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
