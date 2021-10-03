@@ -9,6 +9,7 @@ import "./Sleep.scss";
 const DEFAULT_K = 0.95;
 
 export const Sleep = () => {
+  let timeoutId = null;
   const [isSleeping, setIsSleeping] = useState(false);
   const { setProgressbarValue, gameOver } = useContext(AppContext);
 
@@ -31,15 +32,17 @@ export const Sleep = () => {
   }, 200);
 
   const sleep = () => {
+    clearTimeout(timeoutId);
     if (!isSleeping) {
       setIsSleeping(true);
-      setTimeout(() => {
-        setK(1.5);
-      }, r({ b: 3500 }));
+      timeoutId = setTimeout(() => {
+        setK(1.2);
+      }, r({ a: 1000, b: 3500 }));
     }
   };
 
   const wakeUp = () => {
+    clearTimeout(timeoutId);
     setIsSleeping(false);
     setK(DEFAULT_K);
   };

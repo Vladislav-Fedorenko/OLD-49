@@ -11,6 +11,7 @@ import {AlkoImage} from '../../components/alkoimage/AlkoImage';
 import {BackgroundImage} from '../../components/backgroundimage/BackgroundImage';
 import {AppContext} from '../../layout/context/Context';
 import audio from '../../assets/audio/psychomecka.ogg';
+import {r} from '../../utils/random';
 
 export const OrderTaxi = () => {
   const {progressbarValue, setAudioTrack} = useContext(AppContext);
@@ -29,14 +30,17 @@ export const OrderTaxi = () => {
   }, []);
 
   const onMouseOver = (e) => {
+    console.log(e);
     if (!progressbarValue) return;
-    const x = e.pageX;
-    const y = e.pageY;
     const pageWidth = window.innerWidth;
     const pageHeight = window.innerHeight;
+    const left = r({b: 1400}) - 700;
+    const bottom = r({b: 700});
+    console.log(pageWidth, pageHeight)
+    console.log(left, bottom)
     setButtonPosition({
-      bottom: pageWidth - x + 10,
-      left: pageHeight - y + 10,
+      left,
+      bottom,
     })
   }
 
