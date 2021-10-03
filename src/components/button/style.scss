@@ -8,6 +8,12 @@
   &--neon {
     animation: flicker 1.5s infinite alternate;
   }
+
+  &--outlined {
+    border-radius: 10px;
+    padding: 10px 15px;
+    animation: outline-flicker 1.5s infinite alternate;
+  }
 }
 
 @keyframes flicker {
@@ -24,5 +30,27 @@
   }
   20%, 24%, 55% {
     text-shadow: none;
+  }
+}
+
+@keyframes outline-flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px var(--buttonColor),
+            0 0 80px var(--buttonColor),
+            0 0 90px var(--buttonColor),
+            0 0 100px var(--buttonColor),
+            0 0 150px var(--buttonColor);
+    box-shadow: 0 0 1px #fff,
+    0 0 5px #fff,
+    0 0 8px #fff,
+    0 0 15px var(--buttonColor);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    box-shadow: none;
   }
 }

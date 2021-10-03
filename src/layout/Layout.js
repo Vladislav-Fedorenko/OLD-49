@@ -15,6 +15,7 @@ import { Sleep }       from "../components/sleep/Sleep";
 import { HeliSound }   from "../components/helisound/HeliSound";
 
 import "./style.css";
+import {HappyEnd} from '../pages/happy-end/HappyEnd';
 
 export const Layout = () => {
   const { audioTrack, progressbarValue, endGame } = useContext(AppContext);
@@ -45,6 +46,7 @@ export const Layout = () => {
         <Route path="/order-taxi">        <OrderTaxi />      </Route>
         <Route path="/choose-taxi">       <ChooseTaxi />     </Route>
         <Route path="/game-over">         <GameOver />       </Route>
+        <Route path="/happy-end">         <HappyEnd />       </Route>
         <Route path="/">                  <Start />          </Route>
       </Switch>
     </div>
