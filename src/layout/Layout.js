@@ -25,7 +25,12 @@ export const Layout = () => {
       {/* <Router> */}
       <Sleep />
 
-      <ReactAudioPlayer src={audioTrack} autoPlay={true} controls={false} />
+      <ReactAudioPlayer
+        src={audioTrack}
+        autoPlay={true}
+        controls={false}
+        volume={0.4}
+      />
       <div className="layout__progress">
         <Progressbar />
       </div>
