@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/OLD-49/static/css/main.a54815f4.chunk.css",
-    "main.js": "/OLD-49/static/js/main.006bc3f4.chunk.js",
-    "main.js.map": "/OLD-49/static/js/main.006bc3f4.chunk.js.map",
-    "runtime-main.js": "/OLD-49/static/js/runtime-main.c19c51a6.js",
-    "runtime-main.js.map": "/OLD-49/static/js/runtime-main.c19c51a6.js.map",
-    "static/js/2.de9eebfc.chunk.js": "/OLD-49/static/js/2.de9eebfc.chunk.js",
-    "static/js/2.de9eebfc.chunk.js.map": "/OLD-49/static/js/2.de9eebfc.chunk.js.map",
-    "static/js/3.8bdb97e5.chunk.js": "/OLD-49/static/js/3.8bdb97e5.chunk.js",
-    "static/js/3.8bdb97e5.chunk.js.map": "/OLD-49/static/js/3.8bdb97e5.chunk.js.map",
+    "main.css": "/OLD-49/static/css/main.ceeb8963.chunk.css",
+    "main.js": "/OLD-49/static/js/main.09464571.chunk.js",
+    "main.js.map": "/OLD-49/static/js/main.09464571.chunk.js.map",
+    "runtime-main.js": "/OLD-49/static/js/runtime-main.9e21dc89.js",
+    "runtime-main.js.map": "/OLD-49/static/js/runtime-main.9e21dc89.js.map",
+    "static/js/2.244f8f79.chunk.js": "/OLD-49/static/js/2.244f8f79.chunk.js",
+    "static/js/2.244f8f79.chunk.js.map": "/OLD-49/static/js/2.244f8f79.chunk.js.map",
+    "static/js/3.7a9c57a8.chunk.js": "/OLD-49/static/js/3.7a9c57a8.chunk.js",
+    "static/js/3.7a9c57a8.chunk.js.map": "/OLD-49/static/js/3.7a9c57a8.chunk.js.map",
     "index.html": "/OLD-49/index.html",
-    "static/css/main.a54815f4.chunk.css.map": "/OLD-49/static/css/main.a54815f4.chunk.css.map",
-    "static/js/2.de9eebfc.chunk.js.LICENSE.txt": "/OLD-49/static/js/2.de9eebfc.chunk.js.LICENSE.txt",
+    "static/css/main.ceeb8963.chunk.css.map": "/OLD-49/static/css/main.ceeb8963.chunk.css.map",
+    "static/js/2.244f8f79.chunk.js.LICENSE.txt": "/OLD-49/static/js/2.244f8f79.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/OLD-49/static/media/svoe.c8413d98.jpg",
     "static/media/choose_taxi.765f6850.jpg": "/OLD-49/static/media/choose_taxi.765f6850.jpg",
     "static/media/dance.d5031953.ogg": "/OLD-49/static/media/dance.d5031953.ogg",
     "static/media/heli.cce1a7d1.ogg": "/OLD-49/static/media/heli.cce1a7d1.ogg",
     "static/media/img.f5292ba0.jpeg": "/OLD-49/static/media/img.f5292ba0.jpeg",
+    "static/media/inside_taxi3.473ba8ae.jpg": "/OLD-49/static/media/inside_taxi3.473ba8ae.jpg",
     "static/media/kamergerskiy.576de4d2.jpg": "/OLD-49/static/media/kamergerskiy.576de4d2.jpg",
     "static/media/long1.e98acd24.png": "/OLD-49/static/media/long1.e98acd24.png",
     "static/media/party.e47365b2.gif": "/OLD-49/static/media/party.e47365b2.gif",
@@ -28,9 +29,9 @@
     "static/media/psychomecka.375ada2f.ogg": "/OLD-49/static/media/psychomecka.375ada2f.ogg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c19c51a6.js",
-    "static/js/2.de9eebfc.chunk.js",
-    "static/css/main.a54815f4.chunk.css",
-    "static/js/main.006bc3f4.chunk.js"
+    "static/js/runtime-main.9e21dc89.js",
+    "static/js/2.244f8f79.chunk.js",
+    "static/css/main.ceeb8963.chunk.css",
+    "static/js/main.09464571.chunk.js"
   ]
 }
