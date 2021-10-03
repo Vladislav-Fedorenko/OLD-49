@@ -17,7 +17,7 @@ export const ChooseTaxi = () => {
     {number: '291', target: 'Port Artur'},
     {number: '917', target: 'Stariy Kirovsk'},
     {number: '593', target: 'Lukyanovka'},
-    {number: '463', target: 'Rabochii'},
+    {number: '463', target: 'Rabochie'},
     {number: '062', target: 'Amur'},
   ];
   const currentTaxi = availableTaxi[Math.floor(Math.random() * 100) % availableTaxi.length];
