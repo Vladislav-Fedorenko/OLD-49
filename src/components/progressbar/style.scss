@@ -18,5 +18,6 @@ $progress-value-color: #d703fc;
      box-shadow: 0 0 0.6em lighten($progress-value-color, 2),
      0 0 0.8em lighten($progress-value-color, 4);
      border-radius: calc(#{$progress-height}/2);
+     transition: 0.5s width;
  }
 }
