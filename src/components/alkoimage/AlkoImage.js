@@ -4,7 +4,7 @@ import { AppContext } from "../../layout/context/Context";
 import { r } from "../../utils/random";
 import { useInterval } from "../../hooks/useInterval";
 
-const SHAKE = 25;
+const SHAKE = 50;
 const BLUR = 5;
 const ROTATE = 25;
 
@@ -16,7 +16,7 @@ const normIntensity = (int) => {
 };
 
 const getCssProps = (intensity) => {
-  const k = 1 + intensity / 100;
+  const k = normIntensity(intensity);
   const shakeX = r({ a: -SHAKE }) * k;
   const shakeY = r({ a: -SHAKE }) * k;
 
