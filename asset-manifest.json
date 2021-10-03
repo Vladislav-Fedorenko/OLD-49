@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/OLD-49/static/css/main.d87c0611.chunk.css",
-    "main.js": "/OLD-49/static/js/main.af5d76ed.chunk.js",
-    "main.js.map": "/OLD-49/static/js/main.af5d76ed.chunk.js.map",
-    "runtime-main.js": "/OLD-49/static/js/runtime-main.57fb1c32.js",
-    "runtime-main.js.map": "/OLD-49/static/js/runtime-main.57fb1c32.js.map",
-    "static/js/2.7feafb21.chunk.js": "/OLD-49/static/js/2.7feafb21.chunk.js",
-    "static/js/2.7feafb21.chunk.js.map": "/OLD-49/static/js/2.7feafb21.chunk.js.map",
-    "static/js/3.e4dc9f58.chunk.js": "/OLD-49/static/js/3.e4dc9f58.chunk.js",
-    "static/js/3.e4dc9f58.chunk.js.map": "/OLD-49/static/js/3.e4dc9f58.chunk.js.map",
+    "main.css": "/OLD-49/static/css/main.a54815f4.chunk.css",
+    "main.js": "/OLD-49/static/js/main.006bc3f4.chunk.js",
+    "main.js.map": "/OLD-49/static/js/main.006bc3f4.chunk.js.map",
+    "runtime-main.js": "/OLD-49/static/js/runtime-main.c19c51a6.js",
+    "runtime-main.js.map": "/OLD-49/static/js/runtime-main.c19c51a6.js.map",
+    "static/js/2.de9eebfc.chunk.js": "/OLD-49/static/js/2.de9eebfc.chunk.js",
+    "static/js/2.de9eebfc.chunk.js.map": "/OLD-49/static/js/2.de9eebfc.chunk.js.map",
+    "static/js/3.8bdb97e5.chunk.js": "/OLD-49/static/js/3.8bdb97e5.chunk.js",
+    "static/js/3.8bdb97e5.chunk.js.map": "/OLD-49/static/js/3.8bdb97e5.chunk.js.map",
     "index.html": "/OLD-49/index.html",
-    "static/css/main.d87c0611.chunk.css.map": "/OLD-49/static/css/main.d87c0611.chunk.css.map",
-    "static/js/2.7feafb21.chunk.js.LICENSE.txt": "/OLD-49/static/js/2.7feafb21.chunk.js.LICENSE.txt",
+    "static/css/main.a54815f4.chunk.css.map": "/OLD-49/static/css/main.a54815f4.chunk.css.map",
+    "static/js/2.de9eebfc.chunk.js.LICENSE.txt": "/OLD-49/static/js/2.de9eebfc.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/OLD-49/static/media/svoe.c8413d98.jpg",
     "static/media/choose_taxi.765f6850.jpg": "/OLD-49/static/media/choose_taxi.765f6850.jpg",
     "static/media/dance.d5031953.ogg": "/OLD-49/static/media/dance.d5031953.ogg",
@@ -28,9 +28,9 @@
     "static/media/psychomecka.375ada2f.ogg": "/OLD-49/static/media/psychomecka.375ada2f.ogg"
   },
   "entrypoints": [
-    "static/js/runtime-main.57fb1c32.js",
-    "static/js/2.7feafb21.chunk.js",
-    "static/css/main.d87c0611.chunk.css",
-    "static/js/main.af5d76ed.chunk.js"
+    "static/js/runtime-main.c19c51a6.js",
+    "static/js/2.de9eebfc.chunk.js",
+    "static/css/main.a54815f4.chunk.css",
+    "static/js/main.006bc3f4.chunk.js"
   ]
 }
