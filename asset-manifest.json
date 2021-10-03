@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/OLD-49/static/css/main.7bba39de.chunk.css",
-    "main.js": "/OLD-49/static/js/main.b007c211.chunk.js",
-    "main.js.map": "/OLD-49/static/js/main.b007c211.chunk.js.map",
-    "runtime-main.js": "/OLD-49/static/js/runtime-main.88e353e4.js",
-    "runtime-main.js.map": "/OLD-49/static/js/runtime-main.88e353e4.js.map",
-    "static/js/2.bd3321b9.chunk.js": "/OLD-49/static/js/2.bd3321b9.chunk.js",
-    "static/js/2.bd3321b9.chunk.js.map": "/OLD-49/static/js/2.bd3321b9.chunk.js.map",
-    "static/js/3.db1a95e9.chunk.js": "/OLD-49/static/js/3.db1a95e9.chunk.js",
-    "static/js/3.db1a95e9.chunk.js.map": "/OLD-49/static/js/3.db1a95e9.chunk.js.map",
+    "main.css": "/OLD-49/static/css/main.e3c018ba.chunk.css",
+    "main.js": "/OLD-49/static/js/main.ce8bedfa.chunk.js",
+    "main.js.map": "/OLD-49/static/js/main.ce8bedfa.chunk.js.map",
+    "runtime-main.js": "/OLD-49/static/js/runtime-main.57fb1c32.js",
+    "runtime-main.js.map": "/OLD-49/static/js/runtime-main.57fb1c32.js.map",
+    "static/js/2.7feafb21.chunk.js": "/OLD-49/static/js/2.7feafb21.chunk.js",
+    "static/js/2.7feafb21.chunk.js.map": "/OLD-49/static/js/2.7feafb21.chunk.js.map",
+    "static/js/3.e4dc9f58.chunk.js": "/OLD-49/static/js/3.e4dc9f58.chunk.js",
+    "static/js/3.e4dc9f58.chunk.js.map": "/OLD-49/static/js/3.e4dc9f58.chunk.js.map",
     "index.html": "/OLD-49/index.html",
-    "static/css/main.7bba39de.chunk.css.map": "/OLD-49/static/css/main.7bba39de.chunk.css.map",
-    "static/js/2.bd3321b9.chunk.js.LICENSE.txt": "/OLD-49/static/js/2.bd3321b9.chunk.js.LICENSE.txt",
+    "static/css/main.e3c018ba.chunk.css.map": "/OLD-49/static/css/main.e3c018ba.chunk.css.map",
+    "static/js/2.7feafb21.chunk.js.LICENSE.txt": "/OLD-49/static/js/2.7feafb21.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/OLD-49/static/media/svoe.c8413d98.jpg",
+    "static/media/choose_taxi.765f6850.jpg": "/OLD-49/static/media/choose_taxi.765f6850.jpg",
     "static/media/dance.d5031953.ogg": "/OLD-49/static/media/dance.d5031953.ogg",
     "static/media/heli.cce1a7d1.ogg": "/OLD-49/static/media/heli.cce1a7d1.ogg",
     "static/media/img.f5292ba0.jpeg": "/OLD-49/static/media/img.f5292ba0.jpeg",
@@ -27,9 +28,9 @@
     "static/media/psychomecka.375ada2f.ogg": "/OLD-49/static/media/psychomecka.375ada2f.ogg"
   },
   "entrypoints": [
-    "static/js/runtime-main.88e353e4.js",
-    "static/js/2.bd3321b9.chunk.js",
-    "static/css/main.7bba39de.chunk.css",
-    "static/js/main.b007c211.chunk.js"
+    "static/js/runtime-main.57fb1c32.js",
+    "static/js/2.7feafb21.chunk.js",
+    "static/css/main.e3c018ba.chunk.css",
+    "static/js/main.ce8bedfa.chunk.js"
   ]
 }
