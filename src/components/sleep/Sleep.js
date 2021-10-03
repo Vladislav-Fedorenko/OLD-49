@@ -2,12 +2,17 @@ import classNames from "classnames";
 import { useContext, useEffect, useState } from "react";
 import { useInterval } from "../../hooks/useInterval";
 import { AppContext } from "../../layout/context/Context";
+import { r } from "../../utils/random";
 
 import "./Sleep.scss";
+
+const DEFAULT_K = 0.95;
 
 export const Sleep = () => {
   const [isSleeping, setIsSleeping] = useState(false);
   const { setProgressbarValue, gameOver } = useContext(AppContext);
+
+  const [k, setK] = useState(DEFAULT_K);
 
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
@@ -21,12 +26,22 @@ export const Sleep = () => {
 
   useInterval(() => {
     if (isSleeping) {
-      setProgressbarValue((value) => value * 1.08);
+      setProgressbarValue((value) => value * k * k);
     }
   }, 200);
 
   const sleep = () => {
-    !isSleeping && setIsSleeping(true);
+    if (!isSleeping) {
+      setIsSleeping(true);
+      setTimeout(() => {
+        setK(1.5);
+      }, r({ b: 3500 }));
+    }
+  };
+
+  const wakeUp = () => {
+    setIsSleeping(false);
+    setK(DEFAULT_K);
   };
 
   const handleKeyDown = (e) => {
@@ -37,7 +52,7 @@ export const Sleep = () => {
 
   const handleKeyUp = (e) => {
     if (e.code === "Space") {
-      setIsSleeping(false);
+      wakeUp();
     }
   };
 
