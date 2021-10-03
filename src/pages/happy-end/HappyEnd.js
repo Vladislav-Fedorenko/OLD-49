@@ -1,28 +1,26 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {useHistory} from 'react-router';
 
-import {AppContext} from '../../layout/context/Context';
 import {Button} from '../../components/button/Button';
 
 import "./style.scss";
 
-export const GameOver = () => {
-  const {gameOverReason} = useContext(AppContext);
+export const HappyEnd = () => {
   const history = useHistory();
   return (
     <div className="game-over">
       <Button
-        text="GAME OVER"
+        text="Congratulations!"
         onClick={() => {}}
         className="game-over__text"
         textColor="#0fa"
       />
-      {gameOverReason && (<Button
-          text={gameOverReason}
-          onClick={() => {}}
-          className="game-over__reason"
-          textColor="#f5f94b"
-        />)}
+      <Button
+        text="Your trip is over!"
+        onClick={() => {}}
+        className="game-over__reason"
+        textColor="#f5f94b"
+      />
       <Button
         text="Go to start"
         className="game-over__go-start"

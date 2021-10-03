@@ -4,7 +4,7 @@
   color: white;
   position: relative;
 
-  transform: translate(var(--shake-x), var(--shake-y));
+  transform: translate(var(--shake-x), var(--shake-y)) scale(1.1, 1.1);
   animation: blur 3s ease-in-out infinite;
   transition: transform 0.4s ease-in-out;
 }
