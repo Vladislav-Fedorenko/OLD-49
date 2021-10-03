@@ -3,6 +3,7 @@
   border: none;
   color: #fff;
   cursor: pointer;
+  outline: none;
 
   &--neon {
     animation: flicker 1.5s infinite alternate;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import { AlkoImage } from "./components/alkoimage/AlkoImage";
 import img from "./assets/img/img.jpeg";
 import { Layout } from "./layout/Layout";

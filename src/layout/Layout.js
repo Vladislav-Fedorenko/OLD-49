@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React, { useContext } from "react";
+import { Switch, Route } from "react-router-dom";
 import ReactAudioPlayer from "react-audio-player";
 import { Dance } from "../pages/dance/Dance";
 
@@ -12,6 +12,7 @@ import { HeliSound } from "../components/helisound/HeliSound";
 
 import "./style.css";
 import { Sleep } from "../components/sleep/Sleep";
+import {OrderTaxi} from '../pages/order-taxi/OrderTaxi';
 
 export const Layout = () => {
   const { audioTrack, progressbarValue, endGame } = useContext(AppContext);
@@ -43,6 +44,9 @@ export const Layout = () => {
         </Route>
         <Route path="/dance">
           <Dance />
+        </Route>
+        <Route path="/order-taxi">
+          <OrderTaxi />
         </Route>
         <Route path="/game-over-heli">
           <GameOverHeli />

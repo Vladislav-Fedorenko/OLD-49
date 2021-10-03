@@ -4,7 +4,7 @@ import { useHistory } from "react-router";
 export const AppContext = React.createContext(null);
 
 export const Context = ({ children }) => {
-  const [progressbarValue, setProgressbarValue] = useState(20);
+  const [progressbarValue, setProgressbarValue] = useState(0);
   const [audioTrack, setAudioTrack] = useState(null);
   const [gameOver, setGameOver] = useState(false);
 
