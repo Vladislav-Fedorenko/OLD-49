@@ -18,6 +18,13 @@ export const Context = ({ children }) => {
     }
   };
 
+  const reset = () => {
+    setProgressbarValue(0);
+    setAudioTrack(null);
+    setGameOver(false);
+    setGameOverReason('');
+  }
+
   const contextValue = {
     progressbarValue,
     setProgressbarValue,
@@ -26,7 +33,8 @@ export const Context = ({ children }) => {
     gameOver,
     endGame,
     gameOverReason,
-    setGameOverReason
+    setGameOverReason,
+    reset,
   };
   return (
     <AppContext.Provider value={contextValue}>{children}</AppContext.Provider>

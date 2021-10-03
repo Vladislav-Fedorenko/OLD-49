@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import {useHistory} from 'react-router-dom';
 
 import background from '../../assets/img/kamergerskiy.jpg'
@@ -10,9 +10,10 @@ import {Button} from '../../components/button/Button';
 import {AlkoImage} from '../../components/alkoimage/AlkoImage';
 import {BackgroundImage} from '../../components/backgroundimage/BackgroundImage';
 import {AppContext} from '../../layout/context/Context';
+import audio from '../../assets/audio/psychomecka.ogg';
 
 export const OrderTaxi = () => {
-  const {progressbarValue} = useContext(AppContext);
+  const {progressbarValue, setAudioTrack} = useContext(AppContext);
   const isDrunk = progressbarValue > 50;
   const INIT_POSITION = isDrunk ? {
     bottom: 510,
@@ -23,6 +24,10 @@ export const OrderTaxi = () => {
   };
   const [buttonPosition, setButtonPosition] = useState(INIT_POSITION)
   const history = useHistory();
+  useEffect(() => {
+    setAudioTrack(audio)
+  }, []);
+
   const onMouseOver = (e) => {
     if (!progressbarValue) return;
     const x = e.pageX;
@@ -34,11 +39,13 @@ export const OrderTaxi = () => {
       left: pageHeight - y + 10,
     })
   }
+
   const order = () => history.push("/choose-taxi")
+
   return (
-    <>
+    <AlkoImage>
       <BackgroundImage src={background} style={{ zIndex: 0 }} />
-      <AlkoImage>
+      <div>
         <div className="order-taxi-page">
           <div className="order-taxi-page__phone-container">
             <img src={isDrunk ? phoneRotate : phone} className="order-taxi-page__phone" alt="phone" />
@@ -48,13 +55,16 @@ export const OrderTaxi = () => {
               textStyle=""
               onClick={order}
               rest={{
-                style: buttonPosition,
+                style: {
+                  ...buttonPosition,
+                  background: "#28252b"
+                },
                 onMouseOver,
               }}
             />
           </div>
         </div>
-      </AlkoImage>
-    </>
+      </div>
+    </AlkoImage>
   );
 };
