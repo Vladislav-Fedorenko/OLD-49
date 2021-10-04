@@ -5,6 +5,7 @@ import {AppContext} from '../../layout/context/Context';
 import {Button} from '../../components/button/Button';
 
 import "./style.scss";
+import {sendFeedback} from '../../utils/feedback';
 
 export const GameOver = () => {
   const {gameOverReason} = useContext(AppContext);
@@ -29,6 +30,13 @@ export const GameOver = () => {
         onClick={() => history.push("/start")}
         buttonStyle="outlined"
         textColor="#f5f94b"
+      />
+      <Button
+        text="Send Feedback"
+        className="game-over__send-feedback"
+        buttonStyle="outlined"
+        textColor="#008957"
+        onClick={sendFeedback}
       />
     </div>
   );
