@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { useInterval } from "../../hooks/useInterval";
 import { AppContext } from "../../layout/context/Context";
 import { r } from "../../utils/random";
@@ -9,7 +9,7 @@ import "./Sleep.scss";
 const DEFAULT_K = 0.95;
 
 export const Sleep = () => {
-  let timeoutId = null;
+  const timeoutId = useRef();
   const [isSleeping, setIsSleeping] = useState(false);
   const { setProgressbarValue, gameOver } = useContext(AppContext);
 
@@ -32,17 +32,16 @@ export const Sleep = () => {
   }, 200);
 
   const sleep = () => {
-    clearTimeout(timeoutId);
     if (!isSleeping) {
       setIsSleeping(true);
-      timeoutId = setTimeout(() => {
+      timeoutId.current = setTimeout(() => {
         setK(1.2);
       }, r({ a: 1000, b: 3500 }));
     }
   };
 
   const wakeUp = () => {
-    clearTimeout(timeoutId);
+    timeoutId && clearTimeout(timeoutId.current);
     setIsSleeping(false);
     setK(DEFAULT_K);
   };
