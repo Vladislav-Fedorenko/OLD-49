@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/OLD-49/static/css/main.9746e9db.chunk.css",
-    "main.js": "/OLD-49/static/js/main.f0ff221e.chunk.js",
-    "main.js.map": "/OLD-49/static/js/main.f0ff221e.chunk.js.map",
+    "main.css": "/OLD-49/static/css/main.00df494c.chunk.css",
+    "main.js": "/OLD-49/static/js/main.0af0ed86.chunk.js",
+    "main.js.map": "/OLD-49/static/js/main.0af0ed86.chunk.js.map",
     "runtime-main.js": "/OLD-49/static/js/runtime-main.70d8874e.js",
     "runtime-main.js.map": "/OLD-49/static/js/runtime-main.70d8874e.js.map",
     "static/js/2.244f8f79.chunk.js": "/OLD-49/static/js/2.244f8f79.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.754624ab.chunk.js": "/OLD-49/static/js/3.754624ab.chunk.js",
     "static/js/3.754624ab.chunk.js.map": "/OLD-49/static/js/3.754624ab.chunk.js.map",
     "index.html": "/OLD-49/index.html",
-    "static/css/main.9746e9db.chunk.css.map": "/OLD-49/static/css/main.9746e9db.chunk.css.map",
+    "static/css/main.00df494c.chunk.css.map": "/OLD-49/static/css/main.00df494c.chunk.css.map",
     "static/js/2.244f8f79.chunk.js.LICENSE.txt": "/OLD-49/static/js/2.244f8f79.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/OLD-49/static/media/svoe.c8413d98.jpg",
     "static/media/choose_taxi.765f6850.jpg": "/OLD-49/static/media/choose_taxi.765f6850.jpg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.70d8874e.js",
     "static/js/2.244f8f79.chunk.js",
-    "static/css/main.9746e9db.chunk.css",
-    "static/js/main.f0ff221e.chunk.js"
+    "static/css/main.00df494c.chunk.css",
+    "static/js/main.0af0ed86.chunk.js"
   ]
 }
