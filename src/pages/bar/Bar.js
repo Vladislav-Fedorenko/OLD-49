@@ -22,7 +22,7 @@ export const Bar = () => {
         <div>
           <Button text={progressbarValue ? "Drink more" : "Drink"} className="bar-page__button" textColor="#f5f94b" onClick={setValue} />
           {
-            progressbarValue && (<Button text="Go Dance" className="bar-page__button" textColor="#0fa" onClick={() => history.push("/dance")} />)
+            Boolean(progressbarValue) && (<Button text="Go Dance" className="bar-page__button" textColor="#0fa" onClick={() => history.push("/dance")} />)
           }
         </div>
       </div>

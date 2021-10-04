@@ -11,7 +11,7 @@ import { useHistory } from "react-router";
 import { AlkoImage } from "../../components/alkoimage/AlkoImage";
 
 const DECREASE = 0.7;
-const INCREASE = 10;
+const INCREASE = 7;
 const COUNT = 5;
 
 export const Taxi = () => {
